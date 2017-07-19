@@ -6,9 +6,9 @@ the dataset is in following url<br>
 
 
 <strong>DATASET</strong><br>
----------------------------<br>
-|  label |  image(R | G | B |)  |<br>
----------------------------<br>
+-----------------------------<br>
+<strong>|</strong>  label <strong>|</strong>  image(R + G + B |)  <strong>|</strong><br>
+-----------------------------<br>
 same Cifar-10<br>
 <br>
 by dohk<br>
