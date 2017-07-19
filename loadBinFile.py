@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 
 # data directory
-input = os.getcwd() + "/data/data.bin"
+input = os.getcwd() + "/eval/eval.bin" # 
 imageSize = 32
 labelSize = 1
 imageDepth = 3

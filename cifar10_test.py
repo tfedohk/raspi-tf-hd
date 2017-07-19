@@ -48,18 +48,20 @@ import cifar10
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_string('train_dir', os.getcwd() + '/cifar10_train',
-                           """Directory where to write event logs """
-                           """and checkpoint.""")
-tf.app.flags.DEFINE_integer('max_steps', 10000,
+tf.app.flags.DEFINE_string('test_dir', os.getcwd() + '/cifar10_test',""" """)
+tf.app.flags.DEFINE_integer('max_steps', 1000,
                             """Number of batches to run.""")
 tf.app.flags.DEFINE_boolean('log_device_placement', False,
                             """Whether to log device placement.""")
 
 
-def train():
+def test():
   """Train CIFAR-10 for a number of steps."""
   with tf.Graph().as_default():
+    new_saver = tf.train.import_meta_graph(os.getcwd() + '/cifar10_test' + '/model.ckpt-999.meta')
+    new_saver.restore(sess, tf.train.latest_checkpoint('./cifar10_test'))
+    print("Model restored from file: %s" % new_saver)
+    
     global_step = tf.Variable(0, trainable=False)
 
     # Get images and labels for CIFAR-10.
@@ -88,17 +90,13 @@ def train():
     sess.run(init)
 
     # Restore the model checkpoint periodically.
-    new_saver = tf.train.import_meta_graph('model.ckpt.meta')
-    new_saver.restore(sess, tf.train.latest_checkpoint('./cifar10_train'))
-    print("Model restored from file: %s" % new_saver)
+    
+    
 
 
 
     # Start the queue runners.
     tf.train.start_queue_runners(sess=sess)
-
-    summary_writer = tf.summary.FileWriter(FLAGS.train_dir,
-                                            graph_def=sess.graph_def)
 
     for step in xrange(FLAGS.max_steps):
         
@@ -119,18 +117,12 @@ def train():
         print (format_str % (datetime.now(), step, loss_value,
                              examples_per_sec, sec_per_batch))
 
-      if step % 100 == 0:
-        summary_str = sess.run(summary_op)
-        summary_writer.add_summary(summary_str, step)
 
       
 
 
 def main(argv=None):  # pylint: disable=unused-argument
-  if tf.gfile.Exists(FLAGS.train_dir):
-    tf.gfile.DeleteRecursively(FLAGS.train_dir)
-  tf.gfile.MakeDirs(FLAGS.train_dir)
-  train()
+  test()
 
 
 if __name__ == '__main__':
