@@ -3,8 +3,8 @@ import os
 import matplotlib.pyplot as plt
 
 # data directory
-input = os.getcwd() + "/eval/eval.bin" # 
-imageSize = 32
+input = os.getcwd() + "/eval/eval.bin" # either "/eval/eval.bin" or "data/data.bin"
+imageSize = 32 #16
 labelSize = 1
 imageDepth = 3
 debugEncodedImage = True
