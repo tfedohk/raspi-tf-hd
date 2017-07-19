@@ -1,3 +1,6 @@
+#
+
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -32,5 +35,5 @@ def showImageWithData(data, offset):
         rgb.append(rgbData)
     showImage(rgb[0], rgb[1], rgb[2])
 for i in range(267):
-    data = np.fromfile(input, dtype='u1')
+    data = np.fromfile(input, dtype='u1') # Construct an array from data in a text or binary file. u는 unicode를 의미
     showImageWithData(data, i)

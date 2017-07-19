@@ -1,3 +1,7 @@
+
+# 이미지에 라벨링을 붙이는 코드.
+# 더불어 이미지의 해상도를 조절할 수 있다.
+
 import PIL
 # Python Image Library. PIL 프로젝트는 2009년 11월을 마지막으로 1.1.7버전을 Release하고 더이상 업데이트가 진행되지 않고 있다.
 # 하지만 여전히 많은 사람들이 PIL을 사용하고 있다.
@@ -73,7 +77,8 @@ for subDir in subDirs:#현재 디렉토리에 있는 하위 디렉토리를 하�
         # continue에 대해서는 http://plaboratory.org/archives/927 여기에 자세한 설명이 있음.
         continue
 
-    imageFileList = os.listdir(subDirPath) #os.listdir은 해당 경로(path)에 존재하는 디렉토리뿐만 아니라 파일들의 리스트를 반환. 그래서 바로 위의 조건문에서 디렉토리인지 아닌지를 검사한 것.
+    imageFileList = os.listdir(subDirPath)
+    #os.listdir은 해당 경로(path)에 존재하는 디렉토리뿐만 아니라 파일들의 리스트를 반환. 그래서 바로 위의 조건문에서 디렉토리인지 아닌지를 검사한 것.
     # 이렇게 하면 전체 이미지 목록이 리스트 형태로 만들어진다.
     # os.listdir의 리턴형은 무엇일까? list다.
     # This method returns a list containing the names of the entries.
