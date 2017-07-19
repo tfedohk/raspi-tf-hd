@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # data directory
 input = os.getcwd() + "/eval" #either "/eval" or "/data". if doing training, then use "/data"
 output = os.getcwd() + "/eval/eval.bin" #ethier "/eval/eval.bin" or "/data/data.bin".
-imageSize = 16 # 이 수치를 줄이면 좀 더 해상도가 높아짐
+imageSize = 128 # 이 수치를 줄이면 좀 더 해상도가 낮아짐. 
 imageDepth = 3
 debugEncodedImage = False
 
