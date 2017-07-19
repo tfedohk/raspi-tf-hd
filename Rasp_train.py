@@ -44,11 +44,11 @@ import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
-import cifar10
+import Rasp
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_string('train_dir', os.getcwd() + '/cifar10_train',
+tf.app.flags.DEFINE_string('train_dir', os.getcwd() + '/Rasp_train',
                            """Directory where to write event logs """
                            """and checkpoint.""")
 tf.app.flags.DEFINE_integer('max_steps', 1000,
@@ -63,18 +63,18 @@ def train():
     global_step = tf.contrib.framework.get_or_create_global_step()
 
     # Get images and labels for CIFAR-10.
-    images, labels = cifar10.distorted_inputs()
+    images, labels = Rasp.distorted_inputs()
 
     # Build a Graph that computes the logits predictions from the
     # inference model.
-    logits = cifar10.inference(images)
+    logits = Rasp.inference(images)
 
     # Calculate loss.
-    loss = cifar10.loss(logits, labels)
+    loss = Rasp.loss(logits, labels)
 
     # Build a Graph that trains the model with one batch of examples and
     # updates the model parameters.
-    train_op = cifar10.train(loss, global_step)
+    train_op = Rasp.train(loss, global_step)
 
 
 

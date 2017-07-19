@@ -43,16 +43,16 @@ import os.path
 import numpy as np
 import tensorflow as tf
 
-import cifar10
+import Rasp
 
 FLAGS = tf.app.flags.FLAGS
 
 
 tf.app.flags.DEFINE_string('eval_data', 'test',
                            """Either 'test' or 'train_eval'.""")
-tf.app.flags.DEFINE_string('checkpoint_dir', os.getcwd() + '/cifar10_train',
+tf.app.flags.DEFINE_string('checkpoint_dir', os.getcwd() + '/Rasp_train',
                            """Directory where to read model checkpoints.""")
-tf.app.flags.DEFINE_string('test_dir', os.getcwd() + '/cifar10_test',
+tf.app.flags.DEFINE_string('test_dir', os.getcwd() + '/Rasp_test',
                            """Directory where to write event logs """
                            """and checkpoint.""")
 tf.app.flags.DEFINE_integer('eval_interval_secs', 60 * 5,
@@ -78,7 +78,7 @@ def eval_once(saver, summary_writer, top_k_op, summary_op):
       # Restores from checkpoint
       saver.restore(sess, ckpt.model_checkpoint_path)
       # Assuming model_checkpoint_path looks something like:
-      #   /my-favorite-path/cifar10_train/model.ckpt-0,
+      #   /my-favorite-path/Rasp_train/model.ckpt-0,
       # extract global_step from it.
       global_step = ckpt.model_checkpoint_path.split('/')[-1].split('-')[-1]
     else:
@@ -122,18 +122,18 @@ def evaluate():
   with tf.Graph().as_default() as g:
     # Get images and labels for CIFAR-10.
     eval_data = FLAGS.eval_data == 'test'
-    images, labels = cifar10.inputs(eval_data=eval_data)
+    images, labels = Rasp.inputs(eval_data=eval_data)
 
     # Build a Graph that computes the logits predictions from the
     # inference model.
-    logits = cifar10.inference(images)
+    logits = Rasp.inference(images)
 
     # Calculate predictions.
     top_k_op = tf.nn.in_top_k(logits, labels, 1)
 
     # Restore the moving average version of the learned variables for eval.
     variable_averages = tf.train.ExponentialMovingAverage(
-        cifar10.MOVING_AVERAGE_DECAY)
+        Rasp.MOVING_AVERAGE_DECAY)
     variables_to_restore = variable_averages.variables_to_restore()
     saver = tf.train.Saver(variables_to_restore)
 

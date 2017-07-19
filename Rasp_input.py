@@ -35,8 +35,8 @@ NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN = 50000
 NUM_EXAMPLES_PER_EPOCH_FOR_EVAL = 10000
 
 
-def read_cifar10(filename_queue):
-  """Reads and parses examples from CIFAR10 data files.
+def read_rasp(filename_queue):
+  """Reads and parses examples from Dataset files.
 
   Recommendation: if you want N-way read parallelism, call this function
   N times.  This will give you N independent Readers reading different
@@ -57,9 +57,9 @@ def read_cifar10(filename_queue):
       uint8image: a [height, width, depth] uint8 Tensor with the image data
   """
 
-  class CIFAR10Record(object):
+  class RaspRecord(object):
     pass
-  result = CIFAR10Record()
+  result = RaspRecord()
 
   # Dimensions of the images in the CIFAR-10 dataset.
   # See http://www.cs.toronto.edu/~kriz/cifar.html for a description of the
@@ -148,7 +148,7 @@ def distorted_inputs(data_dir, batch_size):
   filename_queue = tf.train.string_input_producer(filenames)
 
   # Read examples from files in the filename queue.
-  read_input = read_cifar10(filename_queue)
+  read_input = read_rasp(filename_queue)
   reshaped_image = tf.cast(read_input.uint8image, tf.float32)
 
   height = IMAGE_SIZE
@@ -214,7 +214,7 @@ def inputs(eval_data, data_dir, batch_size):
   filename_queue = tf.train.string_input_producer(filenames)
 
   # Read examples from files in the filename queue.
-  read_input = read_cifar10(filename_queue)
+  read_input = read_rasp(filename_queue)
   reshaped_image = tf.cast(read_input.uint8image, tf.float32)
 
   height = IMAGE_SIZE
