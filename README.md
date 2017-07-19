@@ -1,14 +1,15 @@
 # raspi-tf-hd
-Raspberrypi3 &amp; TensorFlow &amp; Human Detection
+Raspberrypi3 &amp; TensorFlow &amp; Human Detection<br><br>
 
-the dataset is in following url
-https://drive.google.com/open?id=0B1JtZvJSgzd1QW1yYVhGUU5QSkE
+the dataset is in following url<br>
+<a href="https://drive.google.com/open?id=0B1JtZvJSgzd1QW1yYVhGUU5QSkE">click here</a><br><br>
 
-DATASET
----------------------------------
-|  label |  image(R | G | B |)  |
----------------------------------
-same Cifar-10
 
-by dohk
-17-07-19
+<strong>DATASET</strong><br>
+---------------------------------<br>
+|  label |  image(R | G | B |)  |<br>
+---------------------------------<br>
+same Cifar-10<br>
+<br>
+by dohk<br>
+17-07-19<br>
