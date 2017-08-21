@@ -119,7 +119,7 @@ $ mkdir normal<br>
 
 ##### 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)
 
-<img src="./img/2.jpg" width=50%, height=50%"></img>
+<img src="./img/2.jpg" width=50%, height=50%></img>
 
 <br>
 <br>
