@@ -130,8 +130,8 @@ pb파일과 txt파일에 원하는 이름을 부여하려면
 <br>
 <h5> Tensorboard 실행 </h5>
 텐서보드로 트레이닝 결과를 관찰하기 위해서는 
-<pre>tensorboard --logdir training_summaries & python3 retrain.py …<pre> 에 이어서 
-<pre>--summaries_dir=training_summaries/basic<pre> 입력
+<pre>tensorboard --logdir training_summaries & python3 retrain.py …</pre> 에 이어서 
+<pre>--summaries_dir=training_summaries/basic</pre> 입력
 <br>
 ```localhost:6006```으로 접속
 <br><br>
