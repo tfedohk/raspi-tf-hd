@@ -15,7 +15,7 @@ by dohk<br>
 17-07-19<br>
 
 <hr/>
-# 환경 <br>
+<h1> 환경 </h1>
 Raspberry Pi 3 
 OS: Raspbian 8.0 (“Jessie”)
 Python version : 3.4.2
