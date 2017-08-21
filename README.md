@@ -2,18 +2,7 @@
 Raspberrypi3 &amp; TensorFlow &amp; Human Detection<br><br>
 
 the dataset is in following url<br>
-<a href="https://drive.google.com/open?id=0B1JtZvJSgzd1QW1yYVhGUU5QSkE">click here</a><br><br>
-
-
-<strong>DATASET</strong><br>
-<strong>----------------------------------</strong><br>
-<strong>|</strong>&nbsp;&nbsp;&nbsp;&nbsp;label&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;&nbsp;&nbsp;image(R + G + B |)&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong><br>
-<strong>----------------------------------</strong><br>
-same Cifar-10<br>
-<br>
-by dohk<br>
-17-07-19<br>
-
+<a href="https://drive.google.com/open?id=0B7yTjMaXa4l1MkV1akJwMy1pSzA">click here</a><br><br>
 <hr/>
 <h1> 환경 </h1>
 Raspberry Pi 3 <br>
@@ -187,3 +176,4 @@ https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#4
 <br>
 https://www.tensorflow.org/tutorials/image_retraining
+
