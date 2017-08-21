@@ -88,10 +88,10 @@ $ mkdir normal<br>
 <br>
 <br>
 
-> 본 예제에서 제공하는 데이터셋의 개수는 다음과 같다.
-> critical: 337장
-> normal: 150장
-> warning: 188장
+> 본 예제에서 제공하는 데이터셋의 개수는 다음과 같다.<br>
+> critical: 337장<br>
+> normal: 150장<br>
+> warning: 188장<br>
 > 총 675장
 <br><br>
 <h5>학습(Training) 시작</h5>
