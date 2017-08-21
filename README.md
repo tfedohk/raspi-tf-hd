@@ -131,49 +131,47 @@ pb파일과 txt파일에 원하는 이름을 부여하려면
 <h5> Tensorboard 실행 </h5>
 텐서보드로 트레이닝 결과를 관찰하기 위해서는 
 <pre>tensorboard --logdir training_summaries & python3 retrain.py …</pre> 에 이어서 
-<pre>--summaries_dir=training_summaries/basic</pre> 입력
+<pre>--summaries_dir=training_summaries/basic</pre> 입력 후 localhost:6006으로 접속
 <br>
-```localhost:6006```으로 접속
-<br><br>
-##### 오버피팅(Overfitting) 확인
-If the training accuracy is high but the validation accuracy remains low, that means the network is overfitting.
+<br>
+<h5>오버피팅(Overfitting) 확인</h5>
+training accuracy가 validation accuracy보다 지속적으로 높게 나타난다면, 오버피팅되었음을 의미한다.
 <br>
 
-
-현재 데이터셋은 오버피팅되어 있다. 따라서 data augmentation이 필요하다.
-(단, 테스트를 수행할 때마다 결과는 달라질 수 있다.)
+현재 데이터셋은 오버피팅되어 있다. 따라서 data augmentation이 필요하다.<br>
+(단, 테스트를 수행할 때마다 결과는 달라질 수 있다.)<br>
 <br>
 > Cross entropy는 loss function으로서, 학습 과정이 잘 수행중인지를 관찰할 수 있게 해주는 지표다.
 > training을 수행한 이유가 바로 loss function인 Cross entropy를 줄이기 위한 것인데, 텐서보드를 통해 관찰한 loss function 그래프가 downwards한 경향을 보인다면, learning이 잘 되고 있으며 학습과정 중에 마주치는 왠만한 noise는 무시하고 있기 때문에 generalization되었다고 할 수 있다.
 <br>
 
-##### 그 외
-현재 기본적으로 ```iteration```은 ```4000```으로 설정되어 있기 때문에, 트레이닝 시간을 줄이기 위하여 다음의 명령어를 덧붙일 수 있음
-```--how_many_training_steps=500```
+<h5> 그 외</h5>
+현재 기본적으로 iteration은 4000으로 설정되어 있기 때문에, 트레이닝 시간을 줄이기 위하여 다음의 명령어를 덧붙일 수 있음
+<pre>--how_many_training_steps=500</pre>
 <br>
 > 각 스텝별로 training set으로부터 랜덤으로 10장의 이미지를 선택하여 학습을 한다. 이 때 back propagation 과정을 통해 final layer에 있는 가중치들을 업데이트한다. 즉 학습시에 예측한 결과 클래스와 ground truth 클래스를 비교하는 과정을 통해 final layer의 가중치 값을 더 적절하게 조정하게 된다.
 <br><br>
 
-##### 학습(Training) 결과
+<h5> 학습(Training) 결과</h5>
 본 명령어를 돌린 후 가장 마지막의 결과로 출력되는 것은 training과 validation에 쓰인 data와는 별도로 분리된 데이터로 최종적으로 test를 수행한 test accuracy가 결과로 나온다. 이 결과값은 학습이 끝난 해당 모델이 낼 수 있는 가장 좋은 값이다. 보통 90%~95% 가량이 나온다.
-<br>
+<br><br>
 <hr/>
-##### 테스트(Testing) 준비
-학습이 끝난 후 생성된 .pb파일과 .txt파일은 ```realtime_capture.py```와 함께 라즈베리파이에 옮겨져야 함
-<br>
+<h5> 테스트(Testing) 준비</h5>
+학습이 끝난 후 생성된 .pb파일과 .txt파일은 realtime_capture.py와 함께 라즈베리파이에 옮겨져야 함
+<br><br>
 
-##### 테스트(Testing) 시작
+<h5> 테스트(Testing) 시작<h5>
 라즈베리파이상에서 다음의 명령어를 입력하여 카메라로 입력을 받은 결과로 테스트를 수행
-```
+<pre>
 $ python3 realtime_capture.py
-```
-<br>
-##### 테스트(Testing) 결과
-카메라 앞에서 최초의 움직임이 있을 경우, .pb파일과 .txt파일을 로드한 후,
+</pre>
+<br><br>
+<h5> 테스트(Testing) 결과</h5>
+카메라 앞에서 최초의 움직임이 있을 경우, .pb파일과 .txt파일을 로드한 후,<br>
 촬영된 이미지에 대한 테스트 결과 출력
 <hr/>
 
-# Reference
+<h1>Reference</h1>
 
 https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 <br>
