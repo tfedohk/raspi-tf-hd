@@ -195,6 +195,8 @@ training accuracy가 validation accuracy보다 지속적으로 높게 나타난�
 
 ##### 학습(Training) 결과
 본 명령어를 돌린 후 가장 마지막의 결과로 출력되는 것은 training과 validation에 쓰인 data와는 별도로 분리된 데이터로 최종적으로 test를 수행한 test accuracy가 결과로 나온다. 이 결과값은 학습이 끝난 해당 모델이 낼 수 있는 가장 좋은 값이다. 보통 90%~95% 가량이 나온다.
+<br>
+
 <img src="./img/9.jpg"><br>
 <br><br>
 
