@@ -21,10 +21,12 @@ Python version : 3.4.2<br>
 TensorFlow version : 1.1.0<br>
 openCV : 3.2.0<br>
 
-<p id="2"></p>
+<div id="2"></div>
+<br>
+
 # 설치과정
 
-<h3> Installing Library needed </h3>
+### Installing Library needed 
 <pre>
 $ sudo su -
 $ apt-get update
