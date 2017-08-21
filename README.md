@@ -119,9 +119,9 @@ $ mkdir normal<br>
 
 ##### 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)
 ..<br>
-<img src="./img/2.jpg" width=50%, height=50%"><br>
+<img src="./img/2.jpg" width=50%, height=50%">
 <br>
-<br>
+
 
 > 본 예제에서 제공하는 데이터셋의 개수는 다음과 같다.<br>
 > critical: 337장<br>
