@@ -189,6 +189,7 @@ training accuracy가 validation accuracy보다 지속적으로 높게 나타난�
 현재 기본적으로 iteration은 4000으로 설정되어 있기 때문에, 트레이닝 시간을 줄이기 위하여 다음의 명령어를 덧붙일 수 있음
 <pre>--how_many_training_steps=500</pre>
 <br>
+
 > 각 스텝별로 training set으로부터 랜덤으로 10장의 이미지를 선택하여 학습을 한다. 이 때 back propagation 과정을 통해 final layer에 있는 가중치들을 업데이트한다. 즉 학습시에 예측한 결과 클래스와 ground truth 클래스를 비교하는 과정을 통해 final layer의 가중치 값을 더 적절하게 조정하게 된다.
 <br><br>
 
