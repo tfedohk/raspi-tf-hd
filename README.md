@@ -16,13 +16,13 @@ by dohk<br>
 
 <hr/>
 <h1> 환경 </h1>
-Raspberry Pi 3 
-OS: Raspbian 8.0 (“Jessie”)
-Python version : 3.4.2
-TensorFlow version : 1.1.0
-openCV : 3.2.0
+Raspberry Pi 3 <br>
+OS: Raspbian 8.0 (“Jessie”)<br>
+Python version : 3.4.2<br>
+TensorFlow version : 1.1.0<br>
+openCV : 3.2.0<br>
 <hr/>
-# 설치과정<br>
+<h1> 설치과정</h1>
 
 ### Installing Library needed
 ```
