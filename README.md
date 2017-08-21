@@ -107,7 +107,7 @@ $ python3 retrain.py --image_dir=./dataset/image/ \
 > training accuracy는 현재 학습에 사용된 이미지를 얼마나 올바른 class로 라벨링하였는지를 나타내는 비율을 말한다.
 > validation accuracy는 training에 쓰인 batch set이 아닌 다른 set의 이미지들을 랜덤하게 가져온 뒤, 그 이미지들에 대한 정확도를 측정한 것을 의미하며, 오버피팅(overfitting) 여부를 알아내기 위하여 쓰인다.
 > (즉 training accuracy는 오로지 학습한 이미지 자체에만 기반을 두고 있기 때문에 training data에 섞여있을 noise들에 대해서 과적합(overfit)하도록 학습했을 것이다. 그러나 모델의 진정한 성능 측정치는 모델이 학습한 데이터에 대해서가 아니라 모델이 학습하지 않은 데이터에 대해서 성능을 측정함으로써 얻을 수 있으며 이 값을 validation accuracy라고 한다.)
-> training accuracy와 validation accuracy에 의한 오버피팅 여부 확인에 대해서는 ‘오버피팅’섹션에서 다룸
+> training accuracy와 validation accuracy에 의한 오버피팅 여부 확인에 대해서는 ‘<a href="#1">오버피팅</a>’섹션에서 다룸
 
 <br>
 <h5> 학습(Training) 결과</h5>
@@ -127,7 +127,7 @@ pb파일과 txt파일에 원하는 이름을 부여하려면
 <img src="./img/5.jpg" width=50%, height=50%>
 <br>
 <br>
-<h5>오버피팅(Overfitting) 확인</h5>
+<h5 id="1">오버피팅(Overfitting) 확인</h5>
 training accuracy가 validation accuracy보다 지속적으로 높게 나타난다면, 오버피팅되었음을 의미한다.
 <img src="./img/8.jpg"><br>
 <br>
