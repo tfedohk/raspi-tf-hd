@@ -72,27 +72,27 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 <br>
 
 <h3> 준비 </h3>
-<pre>retrain.py</pre> 파일과 동일한 폴더에 학습할 폴더 생성
+파일과 동일한 폴더에 학습할 폴더 생성
 <pre>
 $ mkdir dataset
 </pre>
 <br>
-##### 학습한 결과를 저장할 폴더 생성
-```
+<h5> 학습한 결과를 저장할 폴더 생성</h5> 
+<pre>
 $ mkdir restoreOutput
-```
+</pre>
 <br>
 
-##### 학습에 필요한 라벨명으로 디렉토리 생성
-```
+<h5> 학습에 필요한 라벨명으로 디렉토리 생성</h5>
+<pre>
 $ cd dataset
 $ mkdir critical
 $ mkdir warning
 $ mkdir normal
-```
+</pre>
 <br>
 
-##### 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)
+<h5> 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)</h5>
 ..
 <br>
 <br>
@@ -103,12 +103,12 @@ $ mkdir normal
 > warning: 188장
 > 총 675장
 <br><br>
-##### 학습(Training) 시작
-```
+<h5>학습(Training) 시작</h5>
+<pre>
 $ python3 retrain.py --image_dir=./dataset/image/ \
 --output_graph=./restoreOutput/output_graph.pb \
 --output_labels=./restoreOutput/output_labels.txt
-```
+</pre>
 <br>
 
 > training 과정 중에는 반복적으로 output이 발생하는데, 매번 training accuracy, validation accuracy 그리고 cross entropy를 출력하게 된다.
@@ -119,13 +119,13 @@ $ python3 retrain.py --image_dir=./dataset/image/ \
 > training accuracy와 validation accuracy에 의한 오버피팅 여부 확인에 대해서는 ‘오버피팅’섹션에서 다룸
 
 <br>
-##### 학습(Training) 결과
+<h5> 학습(Training) 결과</h5>
 30분 정도의 학습이 끝나면 “restoreFolder"내에 .pb파일과 라벨링 정보가 들어있는 .txt 파일이 생성됨
-<br>
+<br><br>
 pb파일과 txt파일에 원하는 이름을 부여하려면 
 ```—output_graph=./restoreOoutput/NAME.pb \```
 ```—output_labels=./restoreOoutput/NAME.txt```
-<br>
+<br><br>
 원하는 이름을 부여할 경우, 테스트용 코드(```realtime_caputure.py```)에서도 수정 필요
 <br>
 ##### Tensorboard 실행
