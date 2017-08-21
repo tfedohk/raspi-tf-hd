@@ -14,14 +14,15 @@ the dataset is in following url<br>
 </ul>
 
 
-#환경 
+# 환경 
 Raspberry Pi 3 <br>
 OS: Raspbian 8.0 (“Jessie”)<br>
 Python version : 3.4.2<br>
 TensorFlow version : 1.1.0<br>
 openCV : 3.2.0<br>
-<hr/>
-<h1 id="2"> 설치과정</h1>
+
+<p id="2"></p>
+# 설치과정
 
 <h3> Installing Library needed </h3>
 <pre>
