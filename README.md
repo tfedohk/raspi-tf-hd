@@ -95,7 +95,7 @@ $ mkdir normal<br>
 
 <h5> 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)</h5>
 ..
-<img src="./img/2.jpg" width+50%, height=50%"><br>
+<img src="./img/2.jpg" width=50%, height=50%"><br>
 <br>
 <br>
 
@@ -123,7 +123,7 @@ $ python3 retrain.py --image_dir=./dataset/image/ \
 <br>
 <h5> 학습(Training) 결과</h5>
 30분 정도의 학습이 끝나면 “restoreFolder"내에 .pb파일과 라벨링 정보가 들어있는 .txt 파일이 생성됨
-<img src="./img/4.jpg"><br>
+<img src="./img/4.jpg" width=50%, height=50%><br>
 <br><br>
 pb파일과 txt파일에 원하는 이름을 부여하려면 
 <pre>—output_graph=./restoreOoutput/NAME.pb \</pre>
@@ -135,7 +135,7 @@ pb파일과 txt파일에 원하는 이름을 부여하려면
 텐서보드로 트레이닝 결과를 관찰하기 위해서는 
 <pre>tensorboard --logdir training_summaries & python3 retrain.py …</pre> 에 이어서 
 <pre>--summaries_dir=training_summaries/basic</pre> 입력 후 localhost:6006으로 접속
-<img src="./img/5.jpg">
+<img src="./img/5.jpg" width=50%, height=50%>
 <br>
 <br>
 <h5>오버피팅(Overfitting) 확인</h5>
@@ -164,7 +164,7 @@ training accuracy가 validation accuracy보다 지속적으로 높게 나타난�
 <hr/>
 <h5> 테스트(Testing) 준비</h5>
 학습이 끝난 후 생성된 .pb파일과 .txt파일은 realtime_capture.py와 함께 라즈베리파이에 옮겨져야 함
-<img src="./img/10.jpg"><br>
+<img src="./img/10.jpg" width=50%, height=50%><br>
 <br><br>
 
 <h5> 테스트(Testing) 시작<h5>
