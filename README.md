@@ -85,10 +85,10 @@ $ mkdir restoreOutput
 
 <h5> 학습에 필요한 라벨명으로 디렉토리 생성</h5>
 <pre>
-$ cd dataset
-$ mkdir critical
-$ mkdir warning
-$ mkdir normal
+$ cd dataset<br>
+$ mkdir critical<br>
+$ mkdir warning<br>
+$ mkdir normal<br>
 </pre>
 <br>
 
@@ -123,15 +123,15 @@ $ python3 retrain.py --image_dir=./dataset/image/ \
 30분 정도의 학습이 끝나면 “restoreFolder"내에 .pb파일과 라벨링 정보가 들어있는 .txt 파일이 생성됨
 <br><br>
 pb파일과 txt파일에 원하는 이름을 부여하려면 
-```—output_graph=./restoreOoutput/NAME.pb \```
-```—output_labels=./restoreOoutput/NAME.txt```
+<pre>—output_graph=./restoreOoutput/NAME.pb \</pre>
+<pre>—output_labels=./restoreOoutput/NAME.txt</pre>
 <br><br>
-원하는 이름을 부여할 경우, 테스트용 코드(```realtime_caputure.py```)에서도 수정 필요
+원하는 이름을 부여할 경우, 테스트용 코드(realtime_caputure.py)에서도 수정 필요<br>
 <br>
-##### Tensorboard 실행
+<h5> Tensorboard 실행 </h5>
 텐서보드로 트레이닝 결과를 관찰하기 위해서는 
-```tensorboard --logdir training_summaries & python3 retrain.py …``` 에 이어서 
-```--summaries_dir=training_summaries/basic``` 입력
+<pre>tensorboard --logdir training_summaries & python3 retrain.py …<pre> 에 이어서 
+<pre>--summaries_dir=training_summaries/basic<pre> 입력
 <br>
 ```localhost:6006```으로 접속
 <br><br>
