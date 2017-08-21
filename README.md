@@ -90,7 +90,7 @@ $ mkdir critical<br>
 $ mkdir warning<br>
 $ mkdir normal<br>
 </pre>
-![a]("./img/1.jpg")
+<img src="./img/1.jpg"><br>
 <br>
 
 <h5> 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)</h5>
