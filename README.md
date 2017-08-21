@@ -113,7 +113,8 @@ $ mkdir critical<br>
 $ mkdir warning<br>
 $ mkdir normal<br>
 </pre>
-<img src="./img/1.jpg" width=50%, height=50%><br>
+
+<img src="./img/1.jpg" width=50%, height=50%>
 <br>
 
 ##### 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)
