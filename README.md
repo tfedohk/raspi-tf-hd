@@ -88,7 +88,7 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 
 ### 준비 
 
-### 파일과 동일한 폴더에 학습할 폴더 생성
+##### 파일과 동일한 폴더에 학습할 폴더 생성
 
 
 <pre>
