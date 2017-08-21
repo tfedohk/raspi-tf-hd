@@ -37,28 +37,29 @@ $ reboot
 
 <br>
 <h3> Installing TensorFlow </h3>
-```
+<pre>
 $ sudo apt-get install python3-pip python3-dev
 $ wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.1.0/tensorflow-1.1.0-cp34-cp34m-linux_armv7l.whl
 $ sudo pip3 install tensorflow-1.1.0-cp34-cp34m-linux_armv7l.whl
 $ sudo pip3 uninstall mock
 $ sudo pip3 install mock
-```
+</pre>
 <br>
-### Installing openCV
-```
+<h3> Installing openCV </h3>
+<pre>
 $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libatlas-base-dev gfortran libgtk-3-dev python3-dev python3-pip python3-numpy
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
 $ sudo update-alternatives --config python
 $ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.2.0.zip; unzip opencv.zip
 $ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.2.0.zip; unzip opencv_contrib.zip
-$ cd ~/opencv-3.2.0/ ; mkdir build; cd build`
+$ cd ~/opencv-3.2.0/ ; mkdir build; cd build
 $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.2.0/modules -D PYTHON_DEFAULT_EXECUTABLE=python3 ..
-$ make -j4`
-$ sudo make install; sudo ldconfig`
+$ make -j4
+$ sudo make install; sudo ldconfig
 $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2.so
-```
+</pre>
+
 <br>
 <hr/>
 # 개요
