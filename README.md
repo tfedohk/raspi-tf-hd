@@ -50,7 +50,10 @@ $ sudo pip3 uninstall mock
 $ sudo pip3 install mock
 </pre>
 <br>
+
 ### Installing openCV 
+
+<br>
 <pre>
 $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libatlas-base-dev gfortran libgtk-3-dev python3-dev python3-pip python3-numpy
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
@@ -69,8 +72,10 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 
 <div id="3"></div>
 <br>
+
 # 개요
 
+<br>
 학습에 쓰이는 모델 : Inception v3 모델<br>
 학습에 쓰이는 파일명 : retrain.py<br>
 테스트에 쓰이는 파일명 : realtime_capture.py<br>
@@ -80,21 +85,31 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 
 <div id="4"></div>
 <br>
+
 # 예제
 
+<br>
+
 ### 준비 
+
+<br>
 파일과 동일한 폴더에 학습할 폴더 생성
 <pre>
 $ mkdir dataset
 </pre>
 <br>
+
 ##### 학습한 결과를 저장할 폴더 생성 
+
+<br>
 <pre>
 $ mkdir restoreOutput
 </pre>
 <br>
 
 ##### 학습에 필요한 라벨명으로 디렉토리 생성
+
+<br>
 <pre>
 $ cd dataset<br>
 $ mkdir critical<br>
