@@ -90,6 +90,7 @@ $ mkdir critical<br>
 $ mkdir warning<br>
 $ mkdir normal<br>
 </pre>
+![](./img/1.jpg)
 <br>
 
 <h5> 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)</h5>
@@ -145,7 +146,7 @@ training accuracy가 validation accuracy보다 지속적으로 높게 나타난�
 > training을 수행한 이유가 바로 loss function인 Cross entropy를 줄이기 위한 것인데, 텐서보드를 통해 관찰한 loss function 그래프가 downwards한 경향을 보인다면, learning이 잘 되고 있으며 학습과정 중에 마주치는 왠만한 noise는 무시하고 있기 때문에 generalization되었다고 할 수 있다.
 <br>
 
-<h5> 그 외</h5>
+<h3> 그 외</h3>
 현재 기본적으로 iteration은 4000으로 설정되어 있기 때문에, 트레이닝 시간을 줄이기 위하여 다음의 명령어를 덧붙일 수 있음
 <pre>--how_many_training_steps=500</pre>
 <br>
