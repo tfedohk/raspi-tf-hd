@@ -62,20 +62,20 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 
 <br>
 <hr/>
-# 개요
-학습에 쓰이는 모델 : Inception v3 모델
-학습에 쓰이는 파일명 : retrain.py
-테스트에 쓰이는 파일명 : realtime_capture.py
+<h1> 개요 </h1>
+학습에 쓰이는 모델 : Inception v3 모델<br>
+학습에 쓰이는 파일명 : retrain.py<br>
+테스트에 쓰이는 파일명 : realtime_capture.py<br>
 <hr/>
 <br>
-# 예제
+<h1> 예제 </h1>
 <br>
 
-### 준비
-```retrain.py``` 파일과 동일한 폴더에 학습할 폴더 생성
-```
+<h3> 준비 </h3>
+<pre>retrain.py</pre> 파일과 동일한 폴더에 학습할 폴더 생성
+<pre>
 $ mkdir dataset
-```
+</pre>
 <br>
 ##### 학습한 결과를 저장할 폴더 생성
 ```
