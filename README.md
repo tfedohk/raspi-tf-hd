@@ -24,7 +24,7 @@ openCV : 3.2.0<br>
 <hr/>
 <h1> 설치과정</h1>
 
-### Installing Library needed
+<h3> Installing Library needed </h3>
 ```
 $ sudo su -
 $ apt-get update
@@ -35,7 +35,7 @@ $ pip3 install --upgrade pip
 $ reboot
 ```
 <br>
-### Installing TensorFlow
+<h3> Installing TensorFlow </h3>
 ```
 $ sudo apt-get install python3-pip python3-dev
 $ wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.1.0/tensorflow-1.1.0-cp34-cp34m-linux_armv7l.whl
