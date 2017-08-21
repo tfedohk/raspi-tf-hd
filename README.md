@@ -93,7 +93,10 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 ### 준비 
 
 <br>
-파일과 동일한 폴더에 학습할 폴더 생성
+
+### 파일과 동일한 폴더에 학습할 폴더 생성
+
+
 <pre>
 $ mkdir dataset
 </pre>
@@ -101,7 +104,7 @@ $ mkdir dataset
 
 ##### 학습한 결과를 저장할 폴더 생성 
 
-<br>
+
 <pre>
 $ mkdir restoreOutput
 </pre>
@@ -109,7 +112,7 @@ $ mkdir restoreOutput
 
 ##### 학습에 필요한 라벨명으로 디렉토리 생성
 
-<br>
+
 <pre>
 $ cd dataset<br>
 $ mkdir critical<br>
