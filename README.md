@@ -38,7 +38,7 @@ $ reboot
 </pre>
 
 <br>
-<h3> Installing TensorFlow </h3>
+### Installing TensorFlow
 <pre>
 $ sudo apt-get install python3-pip python3-dev
 $ wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.1.0/tensorflow-1.1.0-cp34-cp34m-linux_armv7l.whl
@@ -47,7 +47,7 @@ $ sudo pip3 uninstall mock
 $ sudo pip3 install mock
 </pre>
 <br>
-<h3> Installing openCV </h3>
+### Installing openCV 
 <pre>
 $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libatlas-base-dev gfortran libgtk-3-dev python3-dev python3-pip python3-numpy
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
@@ -63,29 +63,35 @@ $ cd /usr/local/lib/python3.4/site-packages/ ; sudo ln -s cv2.cpython-34m.so cv2
 </pre>
 
 <br>
-<hr/>
-<h1 id="3"> 개요 </h1>
+
+<div id="3"></div>
+<br>
+# 개요
+
 학습에 쓰이는 모델 : Inception v3 모델<br>
 학습에 쓰이는 파일명 : retrain.py<br>
 테스트에 쓰이는 파일명 : realtime_capture.py<br>
-<hr/>
-<br>
-<h1 id="4"> 예제 </h1>
+
 <br>
 
-<h3> 준비 </h3>
+
+<div id="4"></div>
+<br>
+# 예제
+
+### 준비 
 파일과 동일한 폴더에 학습할 폴더 생성
 <pre>
 $ mkdir dataset
 </pre>
 <br>
-<h5> 학습한 결과를 저장할 폴더 생성</h5> 
+##### 학습한 결과를 저장할 폴더 생성 
 <pre>
 $ mkdir restoreOutput
 </pre>
 <br>
 
-<h5> 학습에 필요한 라벨명으로 디렉토리 생성</h5>
+##### 학습에 필요한 라벨명으로 디렉토리 생성
 <pre>
 $ cd dataset<br>
 $ mkdir critical<br>
@@ -95,7 +101,7 @@ $ mkdir normal<br>
 <img src="./img/1.jpg" width=50%, height=50%><br>
 <br>
 
-<h5> 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)</h5>
+##### 학습에 쓰일 이미지 데이터들을 각 폴더에 배치(jpg, png)
 ..
 <img src="./img/2.jpg" width=50%, height=50%"><br>
 <br>
