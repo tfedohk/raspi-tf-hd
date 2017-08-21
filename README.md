@@ -3,16 +3,18 @@ Raspberrypi3 &amp; TensorFlow &amp; Human Detection<br><br>
 
 the dataset is in following url<br>
 <a href="https://drive.google.com/open?id=0B7yTjMaXa4l1MkV1akJwMy1pSzA">click here</a><br><br>
-<hr/>
 
-<h2> Contents </h2>
-<ul> <a href="#2">설치과정</a></ul>
-<ul> <a href="#3">개요</a></ul>
-<ul> <a href="#4">예제</a></ul>
-<ul> <a href="#5">Reference</a></ul>
 
-<hr/>
-<h1> 환경 </h1>
+## Contents
+<ul>
+    <li><a href="#2">설치과정</a></li>
+    <li><a href="#3">개요</a></li>
+    <li><a href="#4">예제</a></li>
+    <li><a href="#5">Reference</a></li>
+</ul>
+
+
+#환경 
 Raspberry Pi 3 <br>
 OS: Raspbian 8.0 (“Jessie”)<br>
 Python version : 3.4.2<br>
