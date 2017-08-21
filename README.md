@@ -200,6 +200,7 @@ training accuracy가 validation accuracy보다 지속적으로 높게 나타난�
 <img src="./img/9.jpg"><br>
 <br><br>
 
+<hr/>
 
 ##### 테스트(Testing) 준비
 학습이 끝난 후 생성된 .pb파일과 .txt파일은 realtime_capture.py와 함께 라즈베리파이에 옮겨져야 함
