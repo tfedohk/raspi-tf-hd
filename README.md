@@ -39,6 +39,7 @@ $ reboot
 
 <br>
 ### Installing TensorFlow
+<br>
 <pre>
 $ sudo apt-get install python3-pip python3-dev
 $ wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.1.0/tensorflow-1.1.0-cp34-cp34m-linux_armv7l.whl
