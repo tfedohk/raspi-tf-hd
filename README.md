@@ -25,7 +25,7 @@ openCV : 3.2.0<br>
 <h1> 설치과정</h1>
 
 <h3> Installing Library needed </h3>
-```
+<pre>
 $ sudo su -
 $ apt-get update
 $ apt-get install python3-matplotlib
@@ -33,7 +33,8 @@ $ apt-get install python3-scipy
 $ apt-get install python3-numpy
 $ pip3 install --upgrade pip
 $ reboot
-```
+</pre>
+
 <br>
 <h3> Installing TensorFlow </h3>
 ```
